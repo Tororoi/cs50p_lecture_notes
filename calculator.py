@@ -1,8 +1,8 @@
-# Ask user for x and y
-x = float(input("What's x? "))
-y = float(input("What's y? "))
+def main():
+    x = int(input("What's x? "))
+    print("x squared is", square(x))
 
-z = x / y
+def square(n):
+    return pow(n, 2)
 
-# Print the result as a formatted string
-print(f"{z:.2f}")
+main()
